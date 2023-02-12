@@ -73,7 +73,7 @@ const AppContainerj = () => {
 
   const states: StatesType = { todoList };
 
-  return <App callbacks={callbacks} stattes={states} />;
+  return <App callbacks={callbacks} states={states} />;
 };
 
 export default AppContainerj;

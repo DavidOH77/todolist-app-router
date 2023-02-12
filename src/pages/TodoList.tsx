@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import TodoItem from "./TodoItem";
-import { CallbacksType, StatesType } from "../AppContainerj";
+import { CallbacksType, StatesType } from "../AppContainer";
 
 type PropsType = { states: StatesType; callbacks: CallbacksType };
 

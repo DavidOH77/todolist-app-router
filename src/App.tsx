@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 
-import { CallbacksType, StatesType } from "./AppContainerj";
+import { CallbacksType, StatesType } from "./AppContainer";
 import Home from "./components/Home";
 import About from "./components/About";
 import NotFound from "./pages/NotFound";
