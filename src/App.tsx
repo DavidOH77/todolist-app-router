@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 
-import { CallbacksType, StatesType } from "./AppContainerj";
-import Home from "./components/Home";
-import About from "./components/About";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import TodoList from "./pages/TodoList";
-import AddTodo from "./pages/AddTodo";
+import AddTodo from "./pages/Addtodo";
 import EditTodo from "./pages/EditTodo";
+import NotFound from "./pages/NotFound";
+import { CallbacksType, StatesType } from "./AppContainer";
+import Loading from "./components/Loading";
 
 type PropsType = {
   states: StatesType;
@@ -33,6 +34,7 @@ const App = ({ states, callbacks }: PropsType) => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      {states.isLoading ? <Loading /> : ""}
     </Router>
   );
 };
